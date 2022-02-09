@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border-style: solid; */
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    background-image: linear-gradient(045deg, #242038 0%, #5A447F 100%);
+    color:rgb(235, 223, 241);
+    display: flex;
+    align-items:center;
+    justify-content:space-around
+}
+
+.heading {
+    width: 100%;
+    padding: 10px 0;
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+
+.bigBox{
+    display: flex;
+    height: 300px;
+    font-size: 200px;
+}
+
+.container{
+    max-width: 1000px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.container h2{
+    margin: 15px 0;
+    font-size: 30px;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+}
+
+.smallBox{
+    height: 70px;
+}
+
+
+@media all and (max-width: 1000px) {
+    .flex-box .container{
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .flex-box .container{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-items: center;
+    }
+    .container div{
+        padding: 10px;
+    }
+}
